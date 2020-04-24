@@ -1,8 +1,12 @@
 require("dotenv").config();
+require("./config/mongodb");
 const app = require("express")();
 const consign = require("consign");
 
-consign().then("./src/config/middlewares.js").into(app);
+consign()
+  .then("./src/config/middlewares.js")
+  .then("./src/config/routes.js")
+  .into(app);
 
 const port = process.env.PORT || 3003;
 const address = process.env.ADDRESS || "localhost";
