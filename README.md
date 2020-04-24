@@ -33,9 +33,9 @@ Primeiramente deve-se criar um arquivo chamado **.env** em ambas as pastas, fron
       }
     ```
 
-    Para **criar o banco**, deve-se rodar o comando: **`knex migrate:latest`**.
+    Para **criar o banco**, deve-se rodar o comando: **`npm knex migrate:latest`**.
 
-    Caso queira **apagar** o banco, o comando é `knex migrate:rollback`.
+    Caso queira **apagar** o banco, o comando é `npm knex migrate:rollback`.
 
 * **MongoDB:** Para configurar o mongo, basta informar o url do seu banco no campo: `MONGO_URL=""` no arquivo `.env`.
 

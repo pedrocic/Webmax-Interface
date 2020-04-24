@@ -7,12 +7,9 @@ MONGO_URL=
 
 AUTH_SECRET=
 
-module.exports = {
-    db: {
-        host : '127.0.0.1',
-        port: 5432,
-        database: '',
-        user: '',
-        password: ''
-    }
-}
+DB_CONNECTION=
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
