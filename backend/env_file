@@ -1,0 +1,18 @@
+PORT=
+ADDRESS=
+
+STORAGE_TYPE=local
+
+MONGO_URL=
+
+AUTH_SECRET=
+
+module.exports = {
+    db: {
+        host : '127.0.0.1',
+        port: 5432,
+        database: '',
+        user: '',
+        password: ''
+    }
+}
