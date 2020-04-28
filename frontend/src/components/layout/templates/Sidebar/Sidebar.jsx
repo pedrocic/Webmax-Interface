@@ -16,7 +16,8 @@ const Sidebar = (props) => {
           return (
             <li key={key}>
               <NavLink to={prop.path} exact activeClassName="active" key={key}>
-                {prop.name}
+                {prop.icon}
+                <div className="linkName">{prop.name}</div>
               </NavLink>
             </li>
           );
